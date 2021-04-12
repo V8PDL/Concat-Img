@@ -1,0 +1,22 @@
+﻿<Window x:Class="Concat_Img.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Concat_Img"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="263.44" Width="369.476">
+    <Grid>
+        <TextBox x:Name="Names_box" HorizontalAlignment="Left" Height="23" Margin="99,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="254"/>
+        <Label Content="Images names" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Width="84"/>
+        <CheckBox x:Name="All_in_dir" Content="All images in direcrory" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Checked="All_in_dir_Checked" Unchecked="All_in_dir_Unchecked"/>
+        <Button x:Name="Go_button" Content="Go" HorizontalAlignment="Left" Margin="277,203,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" RenderTransformOrigin="0.507,1.371"/>
+        <TextBox x:Name="Path_box" HorizontalAlignment="Left" Height="23" Margin="49,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="304"/>
+        <Label Content="Path" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.649,-0.128" Width="34"/>
+        <CheckBox x:Name="Even_in_subdir" Content="Even in subdirectories" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+        <TextBox x:Name="Path_to_Save" HorizontalAlignment="Left" Height="23" Margin="67,162,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="285"/>
+        <Label Content="Save to" HorizontalAlignment="Left" Margin="10,162,0,0" VerticalAlignment="Top" Width="52"/>
+        <CheckBox x:Name="Save_there" Content="Where other images was" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" Unchecked="Save_there_Unchecked" Checked="Save_there_Checked"/>
+
+    </Grid>
+</Window>
